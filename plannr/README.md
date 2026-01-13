@@ -1,73 +1,94 @@
-# React + TypeScript + Vite
+# 🗂️ Kanban Board – React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação simples de **Kanban Board** desenvolvida em **React**, **TypeScript** e **Tailwind CSS**, permitindo criar, editar, mover e excluir tarefas entre colunas (**To Do**, **Doing**, **Done**).
 
-Currently, two official plugins are available:
+As tarefas são salvas no **localStorage**, mantendo os dados mesmo após recarregar a página.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ➕ Criar tarefas
+- ✏️ Editar tarefas
+- 🗑️ Excluir tarefas
+- 🔄 Mover tarefas entre colunas
+- 💾 Persistência com localStorage
+- 📱 Layout responsivo (mobile, tablet e desktop)
+- ⚠️ Validação simples (não permite tarefa vazia)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologias Utilizadas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide Icons
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Pré-requisitos
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Antes de rodar o projeto, você precisa ter instalado:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Node.js** (versão 18 ou superior)
+- **npm**, **yarn** ou **pnpm**
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Verifique se o Node está instalado:
+
+```bash
+node -v
+
+
+## ⚡ Como Rodar o Projeto
+Passo a passo
+
+# Clone este repositório
+$ git clone [https://github.com/Janderff/Plannr.git](https://github.com/Janderff/Plannr.git)
+
+# Acesse a pasta do projeto
+$ cd plannr
+
+# Instale as dependências
+$ npm install
+
+# Inicie o servidor de desenvolvimento (em outro terminal)
+$ npm run dev
+
+# O servidor iniciará na porta 5173. Acesse http://localhost:5173
+
+📂 Estrutura de Pastas
+
+src/
+├── components/
+│   └── ui/
+│       └── modal.tsx
+├── App.tsx
+├── main.tsx
+└── index.css
+
+
+
+✨ Melhorias futuras
+
+🧲 Drag and Drop
+
+🎨 Animações e microinterações
+
+♿ Acessibilidade (teclado e ARIA)
+
+🔒 Bloqueio de scroll ao abrir o modal
+
+🧩 Componentização das colunas
+
+🧑‍💻 Autor
+
+Desenvolvido por Jander Fernando
+💻 Desenvolvedor Web em formação
+🥋 Instrutor de Jiu-Jitsu
+
+📄 Licença
+
+Este projeto está sob a licença MIT.
 ```
