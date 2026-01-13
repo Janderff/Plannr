@@ -37,7 +37,7 @@ Antes de rodar o projeto, você precisa ter instalado:
 
 Verifique se o Node está instalado:
 
-````bash
+```bash
 node -v
 
 
@@ -58,6 +58,8 @@ $ npm run dev
 
 # O servidor iniciará na porta 5173. Acesse http://localhost:5173
 
+📂 Estrutura de Pastas
+
 src/
 ├── components/
 │   └── ui/
@@ -65,7 +67,10 @@ src/
 ├── App.tsx
 ├── main.tsx
 └── index.css
-```✨ Melhorias futuras
+
+
+
+✨ Melhorias futuras
 
 🧲 Drag and Drop
 
@@ -86,4 +91,4 @@ Desenvolvido por Jander Fernando
 📄 Licença
 
 Este projeto está sob a licença MIT.
-````
+```

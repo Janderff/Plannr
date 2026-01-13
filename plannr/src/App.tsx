@@ -72,12 +72,7 @@ function App() {
 
   return (
     <div className="min-h-screen h-fit bg-black flex items-center justify-center gap-4 p-8 flex-row">
-      <div
-        className="  w-full gap-8 md:grid-cols-3 grid 
-  grid-cols-1 
-  
-  lg:grid-cols-3 "
-      >
+      <div className="  w-full gap-8 md:grid-cols-3 grid grid-cols-1 lg:grid-cols-3 ">
         <div className="max-h-fit p-4 w-full border rounded-xl bg-sky-100 ">
           <div className="justify-start  gap-2 p-8 flex items-center">
             <Circle size={10} fill="blue" color="blue" />
@@ -153,6 +148,7 @@ function App() {
             </Modal>
           </div>
         </div>
+
         <div className="max-h-fit p-4 w-full border rounded-xl bg-orange-100">
           <div className="justify-start  gap-2 p-8 flex items-center">
             <Circle size={10} fill="blue" color="blue" />
