@@ -45,7 +45,7 @@ node -v
 Passo a passo
 
 # Clone este repositório
-$ git clone [https://github.com/CodiChallange/CodiChallange.git](https://github.com/CodiChallange/CodiChallange.git)
+$ git clone [https://github.com/Janderff/Plannr.git](https://github.com/Janderff/Plannr.git)
 
 # Acesse a pasta do projeto
 $ cd plannr
