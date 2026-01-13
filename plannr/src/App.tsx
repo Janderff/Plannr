@@ -31,14 +31,12 @@ function App() {
       return;
     }
     setTasks((prev) => {
-      // edição
       if (editingTaskId) {
         return prev.map((t) =>
           t.id === editingTaskId ? { ...t, text: task } : t
         );
       }
 
-      // criação
       return [
         ...prev,
         {
